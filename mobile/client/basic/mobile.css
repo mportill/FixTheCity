@@ -1,0 +1,16 @@
+h1 {
+  margin-bottom: 40px;
+}
+.main.container {
+  width: 80%;
+  min-width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.ui.steps {
+  margin-bottom: 40px;
+}
+.photo{
+	border: 10px solid #eeeeee;
+}

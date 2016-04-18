@@ -1,0 +1,45 @@
+<template name="basic">
+
+  {{> wizard id="basic" route="basic" steps=steps stepsTemplate="steps_semanticUI" buttonClasses="ui button"}}
+
+ {{#if pic}}
+    
+        {{>picbutton}}
+ {{/if}}
+ {{#if gps}}
+    
+        {{>gpsbutton}}
+ {{/if}}
+</template>
+
+<template name="picbutton">
+  
+      <br><br>
+    <button type="submit" class="ui button takePhoto">Take Photo</button>
+    <br><br>
+     <img width="100" class="photo" style="display:none"><br>
+    
+</template>
+
+ 
+<template name="gpsbutton">
+  <br><br>
+  <button type="submit" class="ui button getGPS">Retrieve GPS</button>
+</template>
+
+<template name="viewOrder">
+  <p>Thank you {{name}}! Your issue has been reported.</p> <br> <br><p>  <a href="/" class="btn btn-secondary">Place another order</a> </p><br><br> Problems Summary:
+					{{#each list}}
+					  {{>hi}}
+					{{/each}}
+ 
+</template>
+
+
+<template name="hi">
+	<br>
+<br>
+    {{topic}} at {{gps.lat}},{{gps.lng}} --> <img class="photo" width="100" src={{image}}>  <br>   
+    <br>
+  <br>
+</template>

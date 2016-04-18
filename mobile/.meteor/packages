@@ -1,0 +1,33 @@
+# Meteor packages used by this project, one per line.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+accounts-password
+aldeed:autoform
+aldeed:collection2
+forwarder:autoform-wizard
+iron:router
+less
+momentjs:moment
+semantic:ui-css
+fabienb4:autoform-semantic-ui
+forwarder:autoform-wizard-iron-router
+standard-minifiers
+meteor-base
+mobile-experience
+mongo
+blaze-html-templates
+session
+jquery
+tracker
+logging
+reload
+random
+ejson
+spacebars
+check
+msavin:mongol
+twbs:bootstrap
+mdg:camera@=1.2.0
+mdg:geolocation
